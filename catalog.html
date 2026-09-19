@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Каталог недвижимости — Golden Key</title>
+  <meta name="description" content="Каталог недвижимости Golden Key: квартиры, дома и коммерческие объекты в Москве и области. Фильтр по типу, району и бюджету. Все объекты проверены юристами.">
+  <link rel="canonical" href="https://vitaly-sokol911.github.io/agenstvo/catalog.html">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0e0e0b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%230e0e0b'/%3E%3Ccircle cx='20' cy='16.5' r='5' fill='%23c79a5b'/%3E%3Cpath d='M20 20.5 L16.2 30 H23.8 Z' fill='%23c79a5b'/%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Golden Key">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://vitaly-sokol911.github.io/agenstvo/catalog.html">
+  <meta property="og:title" content="Каталог недвижимости — Golden Key">
+  <meta property="og:description" content="Каталог недвижимости Golden Key: квартиры, дома и коммерческие объекты в Москве и области. Фильтр по типу, району и бюджету. Все объекты проверены юристами.">
+  <meta property="og:image" content="https://vitaly-sokol911.github.io/agenstvo/assets/img/p1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Каталог недвижимости — Golden Key">
+  <meta name="twitter:description" content="Каталог недвижимости Golden Key: квартиры, дома и коммерческие объекты в Москве и области. Фильтр по типу, району и бюджету. Все объекты проверены юристами.">
+  <meta name="twitter:image" content="https://vitaly-sokol911.github.io/agenstvo/assets/img/p1.jpg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo" aria-label="Golden Key — на главную"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="38" height="38" rx="7" stroke="currentColor" stroke-opacity=".45" stroke-width="1.4"/><circle cx="20" cy="16.5" r="5" fill="currentColor"/><path d="M20 20.5 L16.2 30 H23.8 Z" fill="currentColor"/></svg></span><span class="logo-word">Golden<em>Key</em></span></a>
+      <nav class="nav-menu">
+        <a href="catalog.html" class="active">Каталог</a>
+        <a href="services.html">Услуги</a>
+        <a href="about.html">О компании</a>
+        <a href="cases.html">Кейсы</a>
+        <a href="reviews.html">Отзывы</a>
+        <a href="blog.html">Блог</a>
+        <a href="owners.html">Собственникам</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="tel:+74957801942" class="nav-phone">+7 (495) 780-19-42<small>Ежедневно 9:00–21:00</small></a>
+        <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb reveal"><a href="index.html">Главная</a> / Каталог</div>
+      <h1 class="reveal d1">Каталог недвижимости</h1>
+      <p class="reveal d2">Более 640 проверенных объектов в базе. Найдено: <b class="gold" data-count-result>6</b> объектов.</p>
+    </div>
+  </section>
+
+  <section style="padding-bottom:40px">
+    <div class="container">
+      <form class="filter-bar reveal" data-filter>
+        <div class="field" style="margin:0"><label>Тип объекта</label>
+          <select name="type"><option value="">Любой</option><option value="flat">Квартира</option><option value="house">Дом</option><option value="commercial">Коммерческая</option></select>
+        </div>
+        <div class="field" style="margin:0"><label>Тип сделки</label>
+          <select name="deal"><option value="">Любая</option><option value="sale">Покупка</option><option value="rent">Аренда</option></select>
+        </div>
+        <div class="field" style="margin:0"><label>Район</label>
+          <select name="area"><option value="">Все районы</option><option>Центр</option><option>Рублёвка</option><option>Москва-Сити</option><option>Хамовники</option></select>
+        </div>
+        <div class="field" style="margin:0"><label>Бюджет</label>
+          <select name="price"><option value="">Любой</option><option>до 15 млн ₽</option><option>15–40 млн ₽</option><option>от 40 млн ₽</option></select>
+        </div>
+        <button type="submit" class="btn btn-gold">Подобрать</button>
+      </form>
+
+      <div class="grid-3">
+        <a href="property.html" class="prop-card tilt reveal" data-prop data-type="flat" data-deal="sale">
+          <div class="prop-photo"><span class="tag">Продажа</span><span class="price">42 500 000 ₽</span><div class="ph ph-1"></div></div>
+          <div class="prop-body"><h3>Пентхаус «Панорама»</h3><div class="addr">ул. Тверская, 12 · Центр</div><div class="prop-specs"><span>◈ 4 комн.</span><span>▢ 168 м²</span><span>↑ 24 этаж</span></div></div>
+        </a>
+        <a href="property.html" class="prop-card tilt reveal d1" data-prop data-type="house" data-deal="sale">
+          <div class="prop-photo"><span class="tag">Продажа</span><span class="price">28 900 000 ₽</span><div class="ph ph-2"></div></div>
+          <div class="prop-body"><h3>Особняк «Золотая роща»</h3><div class="addr">пос. Барвиха · Рублёвка</div><div class="prop-specs"><span>◈ 6 комн.</span><span>▢ 340 м²</span><span>◱ 12 сот.</span></div></div>
+        </a>
+        <a href="property.html" class="prop-card tilt reveal d2" data-prop data-type="flat" data-deal="rent">
+          <div class="prop-photo"><span class="tag">Аренда</span><span class="price">180 000 ₽/мес</span><div class="ph ph-3"></div></div>
+          <div class="prop-body"><h3>Апартаменты «Сити»</h3><div class="addr">Пресненская наб., 8 · Сити</div><div class="prop-specs"><span>◈ 2 комн.</span><span>▢ 92 м²</span><span>↑ 56 этаж</span></div></div>
+        </a>
+        <a href="property.html" class="prop-card tilt reveal" data-prop data-type="flat" data-deal="sale">
+          <div class="prop-photo"><span class="tag">Продажа</span><span class="price">19 200 000 ₽</span><div class="ph ph-4"></div></div>
+          <div class="prop-body"><h3>3-комнатная «Резиденс»</h3><div class="addr">ул. Остоженка, 25 · Хамовники</div><div class="prop-specs"><span>◈ 3 комн.</span><span>▢ 104 м²</span><span>↑ 7 этаж</span></div></div>
+        </a>
+        <a href="property.html" class="prop-card tilt reveal d1" data-prop data-type="commercial" data-deal="sale">
+          <div class="prop-photo"><span class="tag">Продажа</span><span class="price">65 000 000 ₽</span><div class="ph ph-5"></div></div>
+          <div class="prop-body"><h3>Офис класса «А»</h3><div class="addr">БЦ «Меркурий» · Сити</div><div class="prop-specs"><span>◈ Open space</span><span>▢ 420 м²</span><span>↑ 31 этаж</span></div></div>
+        </a>
+        <a href="property.html" class="prop-card tilt reveal d2" data-prop data-type="house" data-deal="rent">
+          <div class="prop-photo"><span class="tag">Аренда</span><span class="price">450 000 ₽/мес</span><div class="ph ph-6"></div></div>
+          <div class="prop-body"><h3>Загородная вилла «Лесная»</h3><div class="addr">Новорижское ш. · 18 км</div><div class="prop-specs"><span>◈ 7 комн.</span><span>▢ 520 м²</span><span>◱ 30 сот.</span></div></div>
+        </a>
+      </div>
+
+      <div style="text-align:center;margin-top:46px" class="reveal">
+        <a href="contacts.html" class="btn btn-ghost btn-lg">Запросить полную базу <span class="arw">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container"><div class="cta-band reveal">
+      <h2>Не нашли подходящий вариант?</h2>
+      <p>Оставьте параметры — подберём объекты из закрытой базы, которых нет в открытом доступе.</p>
+      <a href="contacts.html" class="btn btn-gold btn-lg">Заказать индивидуальный подбор</a>
+    </div></div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo" aria-label="Golden Key — на главную"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="38" height="38" rx="7" stroke="currentColor" stroke-opacity=".45" stroke-width="1.4"/><circle cx="20" cy="16.5" r="5" fill="currentColor"/><path d="M20 20.5 L16.2 30 H23.8 Z" fill="currentColor"/></svg></span><span class="logo-word">Golden<em>Key</em></span></a>
+          <p>Премиальное агентство недвижимости полного цикла. Более 10 лет открываем двери в лучшие дома города.</p>
+          <a href="tel:+74957801942" class="nav-phone" style="color:var(--brass-hi)">+7 (495) 780-19-42</a>
+        </div>
+        <div class="footer-col"><h4>Навигация</h4><a href="catalog.html">Каталог</a><a href="services.html">Услуги</a><a href="about.html">О компании</a><a href="cases.html">Кейсы</a></div>
+        <div class="footer-col"><h4>Клиентам</h4><a href="reviews.html">Отзывы</a><a href="blog.html">Блог и аналитика</a><a href="owners.html">Собственникам</a><a href="contacts.html">Контакты</a></div>
+        <div class="footer-col"><h4>Контакты</h4><a href="mailto:info@goldenkey-agency.ru">info@goldenkey-agency.ru</a><a href="contacts.html">г. Москва, ул. Тверская, 12</a><span class="footer-plain">Ежедневно 9:00–21:00</span></div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-year>2026</span> Golden Key. Все права защищены.</span><span>Политика конфиденциальности · Договор оферты</span></div>
+    </div>
+  </footer>
+
+  <div class="msg-dock">
+    <a class="msg-btn msg-wa" data-label="WhatsApp" href="https://wa.me/74957801942" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1112 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 01-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.700.7-1 1.7-1 2.8.1 1.6 1.2 3.1 1.4 3.3.2.2 2.3 3.5 5.5 4.7 2.7 1 3.3.8 3.9.8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.2-.5-.3z"/></svg>
+    </a>
+    <a class="msg-btn msg-tg" data-label="Telegram" href="https://t.me/goldenkey" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3l-3 14.2c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.5-1 .5l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2L6.1 12.6 1.5 11.2c-1-.3-1-1 .2-1.5l19-7.3c.8-.3 1.5.2 1.2 1.9z"/></svg>
+    </a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
