@@ -648,7 +648,7 @@ body::after {
    ============================================================ */
 
 /* ---------- Развилка аудитории на первом экране ---------- */
-.split-cta { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
+.split-cta { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 28px; }
 .split-card {
   display: flex; flex-direction: column; gap: 6px;
   padding: 22px 22px 20px; border: 1px solid var(--line);
