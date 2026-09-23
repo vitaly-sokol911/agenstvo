@@ -330,9 +330,10 @@ function buildContactModal() {
   trap.setAttribute("aria-hidden", "true");
   const trapIn = document.createElement("input");
   trapIn.type = "text";
-  trapIn.name = "city";
+  trapIn.name = "gk_ref";
   trapIn.tabIndex = -1;
   trapIn.autocomplete = "off";
+  trapIn.setAttribute("aria-hidden", "true");
   trap.appendChild(trapIn);
 
   const submit = document.createElement("button");
