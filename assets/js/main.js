@@ -261,8 +261,8 @@ function initCore() {
    ведут себя непредсказуемо: где-то откроется почтовый клиент, где-то
    случайный веб-сервис, где-то «пользователь не найден». Поэтому клик
    открывает окно, в котором посетитель доводит обращение до конца и
-   видит подтверждение. На телефоне ссылка tel: не перехватывается —
-   там звонилка открывается по-настоящему.
+   видит подтверждение. На телефоне ссылка tel: тоже не уходит из страницы —
+   чтобы человек не позвонил по выдуманному номеру.
 ------------------------------------------------------------------ */
 function buildContactModal() {
   const wrap = document.createElement("div");
@@ -454,15 +454,11 @@ function initContactModal() {
     m.fContact.input.focus({ preventScroll: true });
   };
 
-  // На телефоне tel: должен открывать звонилку — это настоящий звонок.
-  const touch = !window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-
   links.forEach((a) => {
     a.addEventListener("click", (e) => {
       const href = a.getAttribute("href") || "";
       let cfg;
       if (href.indexOf("tel:") === 0) {
-        if (touch) return;
         cfg = MODES.call();
       } else if (href.indexOf("mailto:") === 0) {
         cfg = MODES.mail(href.slice(7).split("?")[0]);
